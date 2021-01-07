@@ -1,0 +1,432 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/* Start Global */
+
+:root{
+    --main-color : #e66496;
+}
+
+.up , .b-color{
+    background-color: var(--main-color);
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 2;
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: .4s ease-in-out;
+    opacity: 0;
+    z-index: 1111111111111111111111111;
+    transform: translateX(100%);
+}
+
+.b-color{
+    bottom: 60px !important;
+    padding: 0px 9px !important;
+}
+
+.c-color{
+    height: 0px;
+    width: 40px;
+    padding: 5px !important;
+    bottom: 100px;
+    background-color: initial;
+}
+
+.c-color-active{
+    height: 200px;
+}
+
+.color1 , .color2 , .color3 , .color4 , .color5 , .color6{
+    width: 30px;
+    height: 16.666666666666667%;
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #e66496;
+}
+
+.color2{
+    background-color: #37b8df;
+}
+
+.color3{
+    background-color: #31b164;
+}
+
+.color4{
+    background-color: #5d69f6;
+}
+
+.color5{
+    background-color: #87ceeb;
+}
+
+.color6{
+    background-color: #f2b31a;
+}
+
+.active-work{
+    color: white !important;
+    background-color: var(--main-color);
+    padding: 5px 25px;
+}
+
+.navbar-active{
+    background-color: white;
+    transition: .2s ease-in-out;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.050980392156862744);
+}
+
+.active{
+    color: var(--main-color) !important;
+}
+
+/* End Global */
+/* Start Header */
+
+.navbar{
+    transition: .2s ease-in-out;
+    position: fixed;
+    z-index: 111111111111111111;
+    width: 100vw;
+}
+
+.header{
+    height: 100vh;
+    background-image: url("../media/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    padding: 3px 15px;
+    transition: .2s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link.active{
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover , .navbar-nav .nav-item .nav-link:focus{
+    color: var(--main-color);
+}
+
+.header .hero{
+    margin-top: 100px;
+}
+
+.header .hero h1{
+    margin: 15px 0;
+    font-size: 60px;
+}
+
+.header .hero p{
+    max-width: 40%;
+    margin: 20px auto;
+    color: #bbb;
+}
+
+.hero button.btn{
+    border: 2px solid white;
+    padding: 15px 35px;
+    transition: .4s ease-in-out;
+}
+
+.hero button.btn:hover{
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.down{
+    width: 25px;
+    height: 50px;
+    border: 2px solid white;
+    margin-top: 150px;
+    cursor: pointer;
+    transform: translateY(50px);
+    animation: down-btn 2s infinite;
+}
+
+@keyframes down-btn{
+    0%{
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(25px);
+    }
+    
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+
+    80%{
+        transform: translateY(25px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* End Header */
+/* Start About */
+
+.about{
+    padding: 80px 0;
+}
+
+.about .hello{
+    display: block;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.about .hello span{
+    color: var(--main-color);
+}
+
+.about .icons i{
+    border: 3px solid #bbb;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.about .icons i:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* End About */
+/* Start Service */
+
+.service{
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.service .serv i{
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.service .serv h4{
+    position: relative;
+    margin: 15px 0;
+    padding-bottom: 20px;
+}
+
+.service .serv h4::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: var(--main-color);
+    transform: translate(-50%);
+}
+
+/* End Service */
+/* Start Blog */
+
+.blog{
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.blog span{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.blog h5{
+    cursor: pointer;
+}
+
+/* End Blog */
+/* Start Freelancer */
+
+.freelancer{
+    padding: 80px 0;
+}
+
+.freelancer .container .text-center a{
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.freelancer .container .text-center a:hover{
+    opacity: .9;
+}
+
+/* End Freelaner */
+/* Start Client */
+.client{
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.carousel-item-custom{
+    height: 400px;
+}
+
+.client i{
+    color: var(--main-color);
+    font-size: 60px;
+}
+.client li{
+    background-color: var(--main-color);
+}
+
+.client img{
+    border: 5px solid rgb(184, 184, 184);
+}
+
+.heigt{
+    max-height: 160px;
+}
+
+/* End Client */
+/* Start Work */
+
+.work{
+    padding: 80px 0;
+}
+
+.work ul{
+    list-style: none;
+    max-width: 500px;
+}
+
+.work li span{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.over-lay{
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.work-photos-js{
+    position: relative;
+}
+
+.work h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(255, 255, 255, 0);
+    transition: .4s ease-in-out;
+}
+
+.work-photos-js::after{
+    content: "Category";
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 12;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    height: 0;
+    transition: .4s ease-in-out;
+    opacity: 0;
+}
+
+.work-photos-js:hover::after{
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.work-photos-js:hover .z{
+    color: white;
+    z-index: 12412142;
+}
+
+.photo-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    cursor: zoom-out;
+    transition: .4s ease-in-out;
+    transform: scale(.0001);
+}
+
+.work-hidden{
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+}
+
+/* End Work */
+/* Start Contact */
+
+.contact{
+    padding: 80px 0;
+}
+
+.contact i{
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+.contact input{
+    height: 50px;
+    padding-left: 10px;
+}
+
+.contact button{
+    all: unset;
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    transition: .2s ease-in-out;
+}
+
+.contact button:hover{
+    opacity: .9;
+}
+
+/* End Contact */
